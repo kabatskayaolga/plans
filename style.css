@@ -18,6 +18,9 @@
   @media screen and (max-width: 40em) {
     .plans {
       margin: 0 2rem; } }
+  @media screen and (min-width: 64em) {
+    .plans > .row {
+      display: flex; } }
   .plans .plan {
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.22);
     position: relative;
@@ -27,39 +30,42 @@
         margin-top: 2em; } }
     .plans .plan .plan-name {
       background-color: #0299af;
-      font-weight: 600;
+      text-transform: uppercase;
       color: white;
       padding: 0.7rem 0;
-      margin-left: -40px;
-      margin-right: -40px;
+      margin-left: -30px;
+      margin-right: -30px;
       position: relative;
       margin-bottom: 0; }
       .plans .plan .plan-name:after, .plans .plan .plan-name:before {
         content: "";
         display: block;
-        border: 12.5px solid transparent;
-        border-top: 12.5px solid #0299af;
-        border-right: 12.5px solid #0299af;
+        border: 7px solid transparent;
+        border-top: 7px solid #028395;
+        border-right: 7px solid #028395;
         width: 0;
         height: 0;
         left: 0px;
-        bottom: -25px;
+        bottom: -14px;
         position: absolute;
         z-index: -1; }
       .plans .plan .plan-name:after {
         right: 0px;
-        bottom: -25px;
         left: initial;
-        border: 12.5px solid transparent;
-        border-left: 12.5px solid #0299af;
-        border-top: 12.5px solid #0299af; }
+        border: 7px solid transparent;
+        border-left: 7px solid #028395;
+        border-top: 7px solid #028395; }
     .plans .plan:nth-child(2) {
-      box-shadow: 0 10px 100px rgba(0, 0, 0, 0.22);
       background-color: #e4fbff; }
       .plans .plan:nth-child(2) .plan-name {
         background-color: #028395; }
         .plans .plan:nth-child(2) .plan-name:before {
-          z-index: 1; }
+          z-index: 1;
+          border-right-color: #026d7c;
+          border-top-color: #026d7c; }
+        .plans .plan:nth-child(2) .plan-name:after {
+          border-left-color: #026d7c;
+          border-top-color: #026d7c; }
       .plans .plan:nth-child(2) .plan-info {
         z-index: 2; }
     .plans .plan:nth-child(3) {
@@ -67,19 +73,31 @@
       .plans .plan:nth-child(3) .plan-name {
         background-color: #026d7c; }
         .plans .plan:nth-child(3) .plan-name:before {
-          z-index: 2; }
+          z-index: 2;
+          border-right-color: #015763;
+          border-top-color: #015763; }
+        .plans .plan:nth-child(3) .plan-name:after {
+          border-left-color: #015763;
+          border-top-color: #015763; }
       .plans .plan:nth-child(3) .plan-info {
         z-index: 3; }
     .plans .plan:nth-child(4) {
-      background-color: #d0f9fe; }
+      background-color: #b7f5fe; }
       .plans .plan:nth-child(4) .plan-name {
-        background-color: #015763; }
+        background-color: #03B3CC; }
         .plans .plan:nth-child(4) .plan-name:before {
-          z-index: 3; }
+          z-index: 3;
+          border-right-color: #027181;
+          border-top-color: #027181; }
+        .plans .plan:nth-child(4) .plan-name:after {
+          border-left-color: #027181;
+          border-top-color: #027181; }
       .plans .plan:nth-child(4) .plan-info {
         z-index: 4; }
-    .plans .plan:nth-child(2n-1) {
-      margin-top: 2em; }
+    .plans .plan:nth-child(1), .plans .plan:nth-child(3) {
+      margin-top: 3em; }
+    .plans .plan:nth-child(4) {
+      margin-top: 6em; }
     .plans .plan hr {
       margin-left: -0.56818rem;
       margin-right: -0.56818rem;
