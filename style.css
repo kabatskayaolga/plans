@@ -1,0 +1,107 @@
+@import 'https://seminarna.ru/assets/css/main.css?v=20170828';
+.plans {
+  text-align: center; }
+  .plans ul li {
+    text-align: left; }
+  .plans h5 + p {
+    margin-top: -0.5rem;
+    color: #01414a; }
+  @media screen and (max-width: 80em) {
+    .plans {
+      margin: 0 2rem; } }
+  @media screen and (max-width: 64em) {
+    .plans {
+      margin: 0 10rem; } }
+  @media screen and (max-width: 50em) {
+    .plans {
+      margin: 0 5rem; } }
+  @media screen and (max-width: 40em) {
+    .plans {
+      margin: 0 2rem; } }
+  .plans .plan {
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.22);
+    position: relative;
+    background-color: #eefdff; }
+    @media screen and (max-width: 64em) {
+      .plans .plan {
+        margin-top: 2em; } }
+    .plans .plan .plan-name {
+      background-color: #0299af;
+      font-weight: 600;
+      color: white;
+      padding: 0.7rem 0;
+      margin-left: -40px;
+      margin-right: -40px;
+      position: relative;
+      margin-bottom: 0; }
+      .plans .plan .plan-name:after, .plans .plan .plan-name:before {
+        content: "";
+        display: block;
+        border: 12.5px solid transparent;
+        border-top: 12.5px solid #0299af;
+        border-right: 12.5px solid #0299af;
+        width: 0;
+        height: 0;
+        left: 0px;
+        bottom: -25px;
+        position: absolute;
+        z-index: -1; }
+      .plans .plan .plan-name:after {
+        right: 0px;
+        bottom: -25px;
+        left: initial;
+        border: 12.5px solid transparent;
+        border-left: 12.5px solid #0299af;
+        border-top: 12.5px solid #0299af; }
+    .plans .plan:nth-child(2) {
+      box-shadow: 0 10px 100px rgba(0, 0, 0, 0.22);
+      background-color: #e4fbff; }
+      .plans .plan:nth-child(2) .plan-name {
+        background-color: #028395; }
+        .plans .plan:nth-child(2) .plan-name:before {
+          z-index: 1; }
+      .plans .plan:nth-child(2) .plan-info {
+        z-index: 2; }
+    .plans .plan:nth-child(3) {
+      background-color: #dafaff; }
+      .plans .plan:nth-child(3) .plan-name {
+        background-color: #026d7c; }
+        .plans .plan:nth-child(3) .plan-name:before {
+          z-index: 2; }
+      .plans .plan:nth-child(3) .plan-info {
+        z-index: 3; }
+    .plans .plan:nth-child(4) {
+      background-color: #d0f9fe; }
+      .plans .plan:nth-child(4) .plan-name {
+        background-color: #015763; }
+        .plans .plan:nth-child(4) .plan-name:before {
+          z-index: 3; }
+      .plans .plan:nth-child(4) .plan-info {
+        z-index: 4; }
+    .plans .plan:nth-child(2n-1) {
+      margin-top: 2em; }
+    .plans .plan hr {
+      margin-left: -0.56818rem;
+      margin-right: -0.56818rem;
+      border-bottom: 1px solid #01414a;
+      margin-top: 0.5rem; }
+      @media screen and (min-width: 40em) {
+        .plans .plan hr {
+          margin-left: -0.85227rem;
+          margin-right: -0.85227rem; } }
+    .plans .plan .plan-info {
+      margin-left: -0.56818rem;
+      margin-right: -0.56818rem;
+      padding-left: 0.56818rem;
+      padding-right: 0.56818rem;
+      z-index: 1; }
+      @media screen and (min-width: 40em) {
+        .plans .plan .plan-info {
+          margin-left: -0.85227rem;
+          margin-right: -0.85227rem;
+          padding-left: 0.85227rem;
+          padding-right: 0.85227rem; } }
+    .plans .plan .plan-cost {
+      font-size: 3em; }
+
+/*# sourceMappingURL=style.css.map */
