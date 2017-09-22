@@ -11,7 +11,7 @@
       margin: 0 2rem; } }
   @media screen and (max-width: 64em) {
     .plans {
-      margin: 0 10rem; } }
+      margin: 0 5rem; } }
   @media screen and (max-width: 50em) {
     .plans {
       margin: 0 5rem; } }
@@ -25,10 +25,8 @@
   .plans .plan {
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.22);
     position: relative;
-    background-color: #eefdff; }
-    @media screen and (max-width: 64em) {
-      .plans .plan {
-        margin-top: 2em; } }
+    background-color: #eefdff;
+    margin-top: 2em; }
     .plans .plan .plan-name {
       background-color: #0299af;
       text-transform: uppercase;
