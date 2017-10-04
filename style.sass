@@ -21,14 +21,13 @@ $color: #01414a
 	& > .row
 		@media screen and (min-width: 64em)
 			display: flex
-			align-items: flex-end
+			// align-items: flex-end
 
 	.plan
 		box-shadow: 0 10px 50px rgba(0, 0, 0, 0.22)
 		position: relative
 		background-color: lighten($color, 82%)
-		// z-index: 2
-		// @media screen and (max-width: 64em)
+		
 		margin-top: 2em
 		.plan-name
 			background-color: lighten($color, 20%)
@@ -40,13 +39,16 @@ $color: #01414a
 			margin-right: -30px
 			position: relative
 			margin-bottom: 0
+			@media screen and (max-width: 40em)
+				margin-left: -25px
+				margin-right: -25px
 			&:after,
 			&:before
 				content: ''
 				display: block
-				border: 7px solid transparent
-				border-top: 7px solid lighten($color, 15%)
-				border-right: 7px solid lighten($color, 15%)
+				border: 7.5px solid transparent
+				border-top: 7.5px solid darken($color, 30%)
+				border-right: 7.5px solid darken($color, 30%)
 				width: 0
 				height: 0
 				left: 0px
@@ -56,57 +58,41 @@ $color: #01414a
 			&:after
 				right: 0px
 				left: initial
-				border: 7px solid transparent
-				border-left: 7px solid lighten($color, 15%)
-				border-top: 7px solid lighten($color, 15%)
-		// &:nth-child(1)
+				border: 7.5px solid transparent
+				border-left: 7.5px solid darken($color, 30%)
+				border-top: 7.5px solid darken($color, 30%)
+		&:nth-child(1)
+			margin-top: 80px
 		&:nth-child(2)
+			background-color: lighten(#03B3CC, 45%)
+			z-index: 1
+			.plan-name
+				background-color: #34cce0
+				&:before
+					z-index: 3
+					border-right-color: darken(#03B3CC, 30%)
+					border-top-color: darken(#03B3CC, 30%)
+				&:after
+					border-left-color: darken(#03B3CC, 30%)
+					border-top-color: darken(#03B3CC, 30%)
+			.plan-info
+				z-index: 4
+		&:nth-child(3)
+			z-index: 0
 			background-color: lighten($color, 80%)
+			margin-top: 80px
+			box-shadow: 0 10px 50px rgba(0, 0, 0, 0.42)
 			.plan-name
 				background-color: lighten($color, 15%)
 				&:before
 					z-index: 1
-					border-right-color: lighten($color, 10%)
-					border-top-color: lighten($color, 10%)
+					border-right-color: darken($color, 30%)
+					border-top-color: darken($color, 30%)
 				&:after
-					border-left-color: lighten($color, 10%)
-					border-top-color: lighten($color, 10%)
+					border-left-color: darken($color, 30%)
+					border-top-color: darken($color, 30%)
 			.plan-info
 				z-index: 2
-		&:nth-child(3)
-			background-color: lighten($color, 78%)
-			.plan-name
-				background-color: lighten($color, 10%)
-				&:before
-					z-index: 2
-					border-right-color: lighten($color, 5%)
-					border-top-color: lighten($color, 5%)
-				&:after
-					border-left-color: lighten($color, 5%)
-					border-top-color: lighten($color, 5%)
-			.plan-info
-				z-index: 3
-		&:nth-child(4)
-			background-color: lighten(#03B3CC, 45%)
-			.plan-name
-				background-color: #03B3CC
-				&:before
-					z-index: 3
-					border-right-color: darken(#03B3CC, 15%)
-					border-top-color: darken(#03B3CC, 15%)
-				&:after
-					border-left-color: darken(#03B3CC, 15%)
-					border-top-color: darken(#03B3CC, 15%)
-			.plan-info
-				z-index: 4
-
-
-		// &:nth-child(1),
-		// &:nth-child(3)
-		// 	margin-top: 3em
-		// &:nth-child(4)
-		// 	margin-top: 6em
-
 
 		hr
 			margin-left: -.56818rem
@@ -123,6 +109,8 @@ $color: #01414a
 			padding-left: .56818rem
 			padding-right: .56818rem
 			z-index: 1
+			padding-bottom: 1rem
+			margin-bottom: 1rem
 			@media screen and (min-width: 40em)
 				margin-left: -.85227rem
 				margin-right: -.85227rem
@@ -130,3 +118,6 @@ $color: #01414a
 				padding-right: .85227rem
 		.plan-cost
 			font-size: 3em
+
+	.button
+		font-size: 1.3em

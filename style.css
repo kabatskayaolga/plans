@@ -20,8 +20,7 @@
       margin: 0 2rem; } }
   @media screen and (min-width: 64em) {
     .plans > .row {
-      display: flex;
-      align-items: flex-end; } }
+      display: flex; } }
   .plans .plan {
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.22);
     position: relative;
@@ -36,12 +35,16 @@
       margin-right: -30px;
       position: relative;
       margin-bottom: 0; }
+      @media screen and (max-width: 40em) {
+        .plans .plan .plan-name {
+          margin-left: -25px;
+          margin-right: -25px; } }
       .plans .plan .plan-name:after, .plans .plan .plan-name:before {
         content: "";
         display: block;
-        border: 7px solid transparent;
-        border-top: 7px solid #028395;
-        border-right: 7px solid #028395;
+        border: 7.5px solid transparent;
+        border-top: 7.5px solid black;
+        border-right: 7.5px solid black;
         width: 0;
         height: 0;
         left: 0px;
@@ -51,48 +54,41 @@
       .plans .plan .plan-name:after {
         right: 0px;
         left: initial;
-        border: 7px solid transparent;
-        border-left: 7px solid #028395;
-        border-top: 7px solid #028395; }
+        border: 7.5px solid transparent;
+        border-left: 7.5px solid black;
+        border-top: 7.5px solid black; }
+    .plans .plan:nth-child(1) {
+      margin-top: 80px; }
     .plans .plan:nth-child(2) {
-      background-color: #e4fbff; }
+      background-color: #b7f5fe;
+      z-index: 1; }
       .plans .plan:nth-child(2) .plan-name {
-        background-color: #028395; }
+        background-color: #34cce0; }
         .plans .plan:nth-child(2) .plan-name:before {
-          z-index: 1;
-          border-right-color: #026d7c;
-          border-top-color: #026d7c; }
-        .plans .plan:nth-child(2) .plan-name:after {
-          border-left-color: #026d7c;
-          border-top-color: #026d7c; }
-      .plans .plan:nth-child(2) .plan-info {
-        z-index: 2; }
-    .plans .plan:nth-child(3) {
-      background-color: #dafaff; }
-      .plans .plan:nth-child(3) .plan-name {
-        background-color: #026d7c; }
-        .plans .plan:nth-child(3) .plan-name:before {
-          z-index: 2;
-          border-right-color: #015763;
-          border-top-color: #015763; }
-        .plans .plan:nth-child(3) .plan-name:after {
-          border-left-color: #015763;
-          border-top-color: #015763; }
-      .plans .plan:nth-child(3) .plan-info {
-        z-index: 3; }
-    .plans .plan:nth-child(4) {
-      background-color: #b7f5fe; }
-      .plans .plan:nth-child(4) .plan-name {
-        background-color: #03B3CC; }
-        .plans .plan:nth-child(4) .plan-name:before {
           z-index: 3;
-          border-right-color: #027181;
-          border-top-color: #027181; }
-        .plans .plan:nth-child(4) .plan-name:after {
-          border-left-color: #027181;
-          border-top-color: #027181; }
-      .plans .plan:nth-child(4) .plan-info {
+          border-right-color: #012f35;
+          border-top-color: #012f35; }
+        .plans .plan:nth-child(2) .plan-name:after {
+          border-left-color: #012f35;
+          border-top-color: #012f35; }
+      .plans .plan:nth-child(2) .plan-info {
         z-index: 4; }
+    .plans .plan:nth-child(3) {
+      z-index: 0;
+      background-color: #e4fbff;
+      margin-top: 80px;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.42); }
+      .plans .plan:nth-child(3) .plan-name {
+        background-color: #028395; }
+        .plans .plan:nth-child(3) .plan-name:before {
+          z-index: 1;
+          border-right-color: black;
+          border-top-color: black; }
+        .plans .plan:nth-child(3) .plan-name:after {
+          border-left-color: black;
+          border-top-color: black; }
+      .plans .plan:nth-child(3) .plan-info {
+        z-index: 2; }
     .plans .plan hr {
       margin-left: -0.56818rem;
       margin-right: -0.56818rem;
@@ -107,7 +103,9 @@
       margin-right: -0.56818rem;
       padding-left: 0.56818rem;
       padding-right: 0.56818rem;
-      z-index: 1; }
+      z-index: 1;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem; }
       @media screen and (min-width: 40em) {
         .plans .plan .plan-info {
           margin-left: -0.85227rem;
@@ -116,5 +114,7 @@
           padding-right: 0.85227rem; } }
     .plans .plan .plan-cost {
       font-size: 3em; }
+  .plans .button {
+    font-size: 1.3em; }
 
 /*# sourceMappingURL=style.css.map */
