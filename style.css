@@ -1,8 +1,10 @@
 @import 'https://seminarna.ru/assets/css/main.css?v=20170828';
 .plans {
   text-align: center;
-  margin: 0 1rem;
-  font-size: 0.92rem; }
+  margin: 0 1rem; }
+  @media screen and (max-width: 80em) {
+    .plans {
+      font-size: 0.92rem; } }
   .plans ul li {
     text-align: left;
     line-height: 1.3; }
