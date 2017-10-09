@@ -1,6 +1,7 @@
 @import 'https://seminarna.ru/assets/css/main.css?v=20170828';
 .plans {
-  text-align: center; }
+  text-align: center;
+  margin: 0 1rem; }
   .plans ul li {
     text-align: left;
     font-size: 0.92rem;
@@ -8,9 +9,24 @@
   .plans h5 + p {
     margin-top: -0.5rem;
     color: #01414a; }
-  @media screen and (max-width: 80em) {
+  @media screen and (max-width: 80em) and (min-width: 70em) {
+    .plans .small-centered {
+      width: 90%; } }
+  @media screen and (max-width: 70em) and (min-width: 1024px) {
     .plans .small-centered {
       width: 100%; } }
+  @media screen and (max-width: 1023px) and (min-width: 60em) {
+    .plans .small-centered {
+      width: 70%; } }
+  @media screen and (max-width: 60em) and (min-width: 50em) {
+    .plans .small-centered {
+      width: 80%; } }
+  @media screen and (max-width: 50em) and (min-width: 40em) {
+    .plans .small-centered {
+      width: 100%; } }
+  @media screen and (max-width: 40em) {
+    .plans .small-centered {
+      max-width: 340px; } }
   @media screen and (min-width: 64em) {
     .plans > .column > .row {
       display: flex; } }
@@ -24,9 +40,6 @@
     @media screen and (max-width: 64em) {
       .plans .plan {
         margin-top: 1rem; } }
-    @media screen and (min-width: 64em) {
-      .plans .plan {
-        transition: max-height 0.4s; } }
     .plans .plan .plan-name {
       background-color: #0299af;
       text-transform: uppercase;
