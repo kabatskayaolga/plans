@@ -17,13 +17,16 @@
       width: 100%; } }
   @media screen and (max-width: 1023px) and (min-width: 60em) {
     .plans .small-centered {
-      width: 70%; } }
+      width: 70%;
+      max-width: 670px; } }
   @media screen and (max-width: 60em) and (min-width: 50em) {
     .plans .small-centered {
-      width: 80%; } }
+      width: 80%;
+      max-width: 670px; } }
   @media screen and (max-width: 50em) and (min-width: 40em) {
     .plans .small-centered {
-      width: 100%; } }
+      width: 100%;
+      max-width: 670px; } }
   @media screen and (max-width: 40em) {
     .plans .small-centered {
       max-width: 340px; } }
