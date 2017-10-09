@@ -6,13 +6,16 @@ $color: #01414a
 .plans
 	text-align: center
 	margin: 0 1rem
+	font-size: 0.92rem
 	ul li
 		text-align: left
-		font-size: 0.92rem
+		// font-size: 0.92rem
 		line-height: 1.3
 	h5+p
 		margin-top: -0.5rem
 		color: $color
+	p
+		line-height: 1.3	
 	
 	@media screen and (max-width: 80em) and (min-width: 70em)
 		.small-centered
@@ -145,11 +148,13 @@ $color: #01414a
 				padding-left: .85227rem
 				padding-right: .85227rem
 		.plan-cost
-			font-size: 1.8em
+			font-size: 2em
 			margin-top: 0.1em
+			font-weight: 400
 
 	.button
-		font-size: 1.2em
+		@media screen and (min-width: 40em)
+			font-size: 1.2em
 		transition: .4s
 		background-color: #ffe100
 		color: black

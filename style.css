@@ -1,14 +1,16 @@
 @import 'https://seminarna.ru/assets/css/main.css?v=20170828';
 .plans {
   text-align: center;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  font-size: 0.92rem; }
   .plans ul li {
     text-align: left;
-    font-size: 0.92rem;
     line-height: 1.3; }
   .plans h5 + p {
     margin-top: -0.5rem;
     color: #01414a; }
+  .plans p {
+    line-height: 1.3; }
   @media screen and (max-width: 80em) and (min-width: 70em) {
     .plans .small-centered {
       width: 90%; } }
@@ -140,14 +142,17 @@
           padding-left: 0.85227rem;
           padding-right: 0.85227rem; } }
     .plans .plan .plan-cost {
-      font-size: 1.8em;
-      margin-top: 0.1em; }
+      font-size: 2em;
+      margin-top: 0.1em;
+      font-weight: 400; }
   .plans .button {
-    font-size: 1.2em;
     transition: 0.4s;
     background-color: #ffe100;
     color: black;
     border: 2px solid #01414a; }
+    @media screen and (min-width: 40em) {
+      .plans .button {
+        font-size: 1.2em; } }
     .plans .button:hover {
       background-color: #ffed66;
       box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.3); }
