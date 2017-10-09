@@ -75,9 +75,9 @@
         border-top: 7.5px solid black; }
     .plans .plan:nth-child(1) {
       margin-top: 80px; }
-      @media screen and (max-width: 64em) {
+      @media screen and (max-width: 1023px) and (min-width: 40em) {
         .plans .plan:nth-child(1) {
-          margin-top: 2.5rem; } }
+          margin-top: 3rem; } }
       @media screen and (max-width: 40em) {
         .plans .plan:nth-child(1) {
           margin-top: 1rem; } }
@@ -111,7 +111,7 @@
           border-top-color: black; }
       .plans .plan:nth-child(3) .plan-info {
         z-index: 2; }
-      @media screen and (max-width: 64em) {
+      @media screen and (max-width: 1023px) {
         .plans .plan:nth-child(3) {
           margin-top: 1rem; } }
     .plans .plan hr {
